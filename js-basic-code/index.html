@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dissect JS</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+
+	var userName = prompt("What's your name?");
+	var confirmCats = confirm('Do you like cats?');
+
+	var petName = 'Simone';
+	var petType = 'tuxedo cat';
+	var petAge = 10;
+	var petIsCat = true;
+
+	if (confirmCats){
+		alert(petName + petType + petAge)
+	}else{
+		alert("You don't get my cat's information.")
+	}
+
+	if (petIsCat == true){
+		alert('My pet is a cat!')
+	}else{
+		alert('My pet is not a cat.')
+	}
+
+	if (petAge !== 12){
+		alert('My pet is not 12 years old.')
+	}
+
+	if (petAge !== 10){
+		alert('My pet is 10 years old!')
+	}else if(petAge < 10){
+		alert('My pet is less than 10 years old.')
+	}else if(petAge > 10){
+		alert('My pet is older than 10 years 0ld.')
+	}
+
+	document.write('Wecome to our page ' + userName);
+
+	var catAage = prompt('How old is your cat?');
+
+	alert(catAge + 2); //won't work as expected
+	
+	alert(parseInt(catAge) + 2); //works as expected
+
+	</script>
+
+</body>
+</html>
