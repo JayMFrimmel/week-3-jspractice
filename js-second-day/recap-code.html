@@ -1,0 +1,43 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>recap conditional loops js</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		// create rows of students
+		var students1 = ["Jane", "Richard", "LeBraun", "Amy"];
+		var students2 = ["Heruka", "Sammy", "Keesha", "Bobby"];
+		var students3 = ["Albert", "Maria", "Jose", "Sarah"];
+
+		// entire class
+		var RCBclass = [students1, students2, students3];
+
+		//how do I print out every single student in row 1?
+		for(var i = 0; i < students1.length; i++) {
+			console.log(students1[i]);
+
+		}
+
+		//How do I print out every student in row 2 whos first name begins with B?
+		for(var i=0; i<students2.length; i++) {
+			if (students2[i].charAt(0) == "B") {
+				console.log("Starts with a B" + students2[i]);
+			}
+		}
+
+		//How do I access the second student in row 3
+		console.log("Second student in row 3.");
+		console.log(RCBclass[2][1]);
+
+		//how do I access the third student in row 2
+		console.log("Third student in row 2.");
+		console.log(RCBclass[1][2]);
+		
+	</script>
+
+</body>
+</html>
