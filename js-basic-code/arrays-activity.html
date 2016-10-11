@@ -1,0 +1,41 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>data types, user input, conditional logic</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		//fill in the question marks with what will be the output
+		var animals = ['parrot', 'cat', 'dog'];
+
+		// parrot, cat, dog ??? X 3 (length of animals)
+		console.log(animals.length);
+
+		// cat ??? X dog (?)
+		console.log(animals[1]);
+
+		// ??? dog X cat (?)
+		console.log(animals[2]);
+
+		// ??? parrot
+		console.log(animals[0]);
+
+		// ??? parrot, cat, dog X logs animal 3 so undefined
+		console.log(animals[animals.length]);
+
+		// ??? cat X logs animal 2 so dog
+		console.log(animals.length-1);
+
+		// ??? nothing undefined
+		console.log(animals.indexOf('bear'));
+
+		//??? parrot X logs number for parrot so 0
+		console.log(animals.indexOf('parrot'));
+
+		//was I right?
+	</script>
+</body>
+</html>
