@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Favorite Bands</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	// create an array called myBands
+	var myBands = ['Eagles', 'Steely Dan', 'Boston', 'Jimmy Buffet', 'Nitty Gritty Dirt Band'];
+
+	//create a prompt
+	var userGuess = prompt("Which band or artist do you like?");
+
+	//convert to lower case
+	var userGuessLower = userGuess.toLowerCase();
+
+	//check array
+	//If it's not in the array...
+	if(myBands.indexOf(userGuessLower) == -1) {
+		alert("Nah! They're pretty lame...");
+	}
+
+	//If it is in the array ...
+	else{
+		alert("OMG! I love them too!");
+	}
+</script>
+</body>
+</html>
