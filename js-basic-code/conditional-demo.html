@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>conditions, logic, input</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		// establish conditional variables
+		var confirmCoffee = confirm('Do you like coffee?');
+		var confirmTea = confirm('Do you like tea?');
+		var cookieType = confirm('What kind of cookie do you like?');
+
+		// use logic and input
+		if (confirmCoffee){
+			alert("You like " + cookieType + " !");
+		}
+
+		else if(confirmTea){
+			alert("You like tea!")
+		}
+
+		else{
+			document.write("You don't like coffee or tea.");
+		}
+	</script>
+
+</body>
+</html>
