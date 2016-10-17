@@ -1,0 +1,36 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>more loops</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	//start with this array
+	var myFarm = ['chickens', 'pigs', 'cows', 'horses',
+	'ostriches']
+	//then loop through the array and alert each value to the screen
+	var arrayLength = myFarm.length;
+	for (var j = 0; j < arrayLength; j++){
+		alert(myFarm[j]);
+		//j = 0
+		//j = 1
+		//..
+		//j = 4
+
+		// bonus - alert i c or o
+		if(myFarm[j].charAt(0)=="c" || myFarm[j].charAt(0)=="o"){
+			alert("Starts with a c or an o!");
+		}
+	}
+
+console.log(j)
+j = 0;
+console.log(j)
+
+</script>
+
+</body>
+</html>
