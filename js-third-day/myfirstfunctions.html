@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>First Functions</title>
+</head>
+
+<body>
+<!-- Working in pairs and using the starter file sent to you via slack – fill in the missing functions and function calls.
+
+* Note: Try to finish all four functions if you can but don’t beat yourself up if you only get 1 or 2. The important thing is that you get at least one function fully done.
+
+* Hint: Look back the example just slacked to you. -->
+<script type="text/javascript">
+
+		// Creates Function called "adder" with three arguments (x, y, z) that get passed into it and console.log the result
+		function adder(a, b, c) {
+			console.log(a + b + c);
+		}
+
+		// Creates a Function called "multiplier" with three arguments (x, y, z) that gets passed into it and console.log the result
+		function multiplier(a, b, c) {
+			console.log(a * b * c);
+		}
+
+		// Creates a function called "isString" with three arguments (x, y, z) that gets passed into it and console.log whether all three are a string or not
+		function isString(x, y, z) {
+			if(typeof x === "string" && typeof y === "string" && typeof z === "string") {
+				console.log("yes, they are all strings.");
+			}
+			// if any of them are not a string it will note that
+			else {
+				console.log("no, I don't think these are strings.")
+			}
+		}
+
+		// Creates a function called "vowelChecker" that takes in a single argument (x) and console.log's whether the value is a vowel or not
+		function vowelChecker(x) {
+			//vowel checker grabs the first letter (character)
+			firstCharacter = x.toLowerCase().charAt[0];
+			// then check if the first letter is a vowel
+			if (firstCharacter === "a" || firstCharacter === "e" || firstCharacter === "i" || firstCharacter === "o" || firstCharacter === "u") {
+				//if so it will log that
+				console.log("The first letter is a vowel.");
+
+			}
+			else {
+				// if not it will log that
+				console.log("The first letter is NOT a vowel. *sadface*");
+			}
+		}
+
+
+
+		// FUNCTION EXECUTION
+		// ================================================================================
+
+		// Add in the lines of code below necessary to "call" the functions you created above.
+		
+		
+		// Call the adder function here
+		
+		adder(1 + 2 + 3);
+		console.log("-------------")
+		
+		// Call the multiplier function here. 
+
+		multiplier(2, 3, 4);
+		console.log("-------------")
+
+
+		// Call the isString function here.
+
+		isString("Woof", "Ace", "Tali");
+		isString("2", "Way", "Street")
+		console.log("-------------------")
+
+
+		// Call the vowelChecker function here.
+		vowelChecker("Eek")
+		vowelChecker("Nah")
+</script>
+
+</body>
+</html>
