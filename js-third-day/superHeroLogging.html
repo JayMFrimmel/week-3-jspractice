@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Supr Hero Logging</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		//variables
+		//various arrays
+		var brands = ['Acer', 'Apple', 'Sony', 'Samsung'];
+		var heroes = ['Black Panther', 'Cyborg', 'Black Canary', 'Donna Troy', 'Huntress', 'Blue Beetle', 'Captain Atom', 'Power Girl'];
+		var booksOnMyShelf = ['Calculus Early Transcendentals', 'Ravens', 'The Self Illusion', 'Hematology Clinical Principles and Applications'];
+		var thingsInFrontOfMe = ['laptop, beanbag', 'cats', 'slippers'];
+		var howIFeel = ['sleep deprived', 'wired on coffee', 'excited'];
+
+		//functions
+
+		// A "Function" is created that allows us to 	"call" (run) the loop for any array we wish.
+		// We pass in an array as an "argument"
+		function consoleInside(arr) {
+
+			//We then loop through the selected array
+		for (var i = 0; i < arr.length; i++); {
+			//Each time we print the value inside the array
+			console.log(arr[i]);
+			
+		}
+			console.log('---------');
+		}
+		// FUNCTION CALLS (Execution)
+	// =======================================================================================
+
+	// Here we call on the function to run the for-loop code on each of the below arrays
+		consoleInside(brands);
+		consoleInside(heroes);
+		consoleInside(booksOnMyShelf);
+		consoleInside(thingsInFrontOfMe);
+		consoleInside(howIFeel);
+
+			
+
+
+</script>
+</body>
+</html>
