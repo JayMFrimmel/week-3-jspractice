@@ -1,0 +1,77 @@
+<!Doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>My First Object</title>
+</head>
+<body>
+<!-- With a partner, spend the next few moments studying the code just slacked to you. 
+
+* Fill in the missing comments to log the relevant information about the provided `car` object.
+
+* Bonus: If you finish early, begin creating an object of your own in HTML. Slack out a snippet of the code to the class when you are done. Be Creative! -->
+
+<script type="text/javascript">
+	
+	// create an object and give it values
+	var car = {
+				make: "Honda",
+				model: "Fit",
+				color: "Blue Raspberry",
+				mileage: 3000,
+				isWorking: true,
+		
+				//now give the array a function and calculate the mileage
+				driveToWork: function() {
+					alert("Old Mileage: " + this.mileage)
+					this.mileage = this.mileage + 8;
+					alert("New mileage: " + this.mileage);
+				},
+
+				// add mileage from a drive around the world
+				driveAroundWorld: function() {
+					alert("old mileage: " + this.mileage);
+					this.mileage = this.mileage + 24000;
+
+					alert("New mileage: " + this.mileage);
+					alert("Car needs a tuneup.")
+
+					this.isWorking = false;
+				},
+
+				//notice that the car has been fixed and is ready to run
+				getTuneUp: function() {
+					alert("Car is ready to go!");
+					this.isWorking = true;
+				},
+
+				// notice for the carr running and honking
+				honk: function() {
+					alert("Meeeeoowww")
+				}
+			}
+			//How to log..
+			//car make
+			console.log(car.make);
+
+			//car model
+			console.log(car.model);
+
+			//car mileage
+			console.log(car.mileage);
+
+			//How to run the driveToWork function
+			car.driveToWork();
+
+			// driveAroundWorld function
+			car.driveAroundWorld();
+
+			// run the tuneup function
+			car.getTuneUp();
+
+	
+</script>
+
+</body>
+</html>
