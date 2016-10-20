@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+	<title>Favorite TV Show Loop</title>
+</head>
+
+<body>
+	<!--
+	Run the program sent to you via slack. 
+	Then, with a partner, fill in the missing comments for each line of code. 
+	Make sure both of you can fully explain what each line means. 
+	Be prepared to share with the class! -->
+	<script type="text/javascript">
+		// ??? (creates variable list)[Empty Array of TV Shows]
+		var favTVshows = [];
+		var tvShow;
+
+		// for loop elements repeats ??? times (3)[3]
+		for (var i=1; i<4; i++) {
+
+			//??? (prompts user to enter titles)[Each time it asks users what their Favorite #1, #2, or #3 TV show.]
+			tvShow = prompt('What\'s your #' + i + ' favorite tv show?')
+			//??? (entries pushed into the list)[It then takes that TV show response and "pushes" (or adds) the variable to the array]
+			favTVshows.push(tvShow)
+		}
+
+		// ??? (formula to accomplish the task)[We then loop back through the favTVshows array] 
+		for(var i=0; i < favTVshows.length; i++) {
+
+			// ??? (alert box that gets info)[And we create alert messages listing out each of the favorite TV Shows]
+			alert(favTVshows[i]);
+		}
+
+</script>
+</body>
+</html>
